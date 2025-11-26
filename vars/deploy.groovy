@@ -6,7 +6,7 @@
                 
                 echo 'Starting new container...'
                 // Note: We use the locally built image for deployment here.
-                sh "docker run -d -p 8000:8000 ${DOCKER_NAME}
+                sh "docker run -d -p 8000:8000 ${DOCKER_NAME}"
 
                 echo 'Deployment Complete' 
 }
