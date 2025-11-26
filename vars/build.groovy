@@ -1,7 +1,7 @@
-def call(String DOCKERHUB_IMAGE)
+def call(String DOCKERHUB_IMAGE , String DOCKER_NAME)
 {
 
-sh "docker build --no-cache -t simple-app:latest ."
+sh "docker build --no-cache -t "${DOCKER_NAME}" ."
  echo 'Code Built Successfully'
 
 
